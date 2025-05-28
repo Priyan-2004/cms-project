@@ -3,7 +3,7 @@ import React from 'react';
 function BasicLayouts(props) {
   return (
     <div>
-      Basic
+      <h1>Basic Layouts</h1>
     </div>
   );
 }
