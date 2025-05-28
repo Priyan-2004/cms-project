@@ -1,14 +1,13 @@
-import React from 'react'
 import './App.css'
-import DashboardLayouts from './layouts/DashboardLayouts'
+import { AuthProvider } from './context/AuthContext';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
   return (
-    <>
-    <DashboardLayouts />
-    </> 
+    <AuthProvider>
+      <AppRoutes/>
+    </AuthProvider>
   )
 }
 
-export default App
+export default App;
