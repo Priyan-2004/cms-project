@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 export default function Developer() {
@@ -13,7 +14,6 @@ export default function Developer() {
 					<br />
 					<span className="text-blue-600">Founder of MVIII TECH</span>
 				</h1>
-
 				<p className="text-lg text-gray-700 mb-8 leading-relaxed">
 					I'm a passionate software developer building modern, scalable web apps.
 					This project showcases a clean and sleek CMS made with{' '}
