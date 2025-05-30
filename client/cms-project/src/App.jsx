@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import Home from './pages/Home'
+import DashboardLayouts from './layouts/DashboardLayouts'
 
 function App() {
 
   return (
     <>
-     <Home/>
-    </>
+    <DashboardLayouts />
+    </> 
   )
 }
 
