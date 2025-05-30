@@ -1,11 +1,26 @@
-import React from 'react';
-
-function AppRoutes(props) {
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import Login from '../pages/Login';
+import SignUp from '../pages/SignUp';
+import BasicLayouts from '../layouts/BasicLayouts';
+import DashboardLayouts from '../layouts/DashboardLayouts';
+export default function AppRoutes() {
+	return (
+		<Routes>
+			<Route path="/" element={<BasicLayouts />}>
+				<Route index element={<Home />} />
+				<Route path="/home" element={<Home />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/sign-up" element={<SignUp />} />
+			</Route>
+			<Route
+				path="/dashboard"
+				element={
+					<PrivateRoute>
+						<DashboardLayouts />
+					</PrivateRoute>
+				}
+			></Route>
+		</Routes>
+	);
 }
-
-export default AppRoutes;
