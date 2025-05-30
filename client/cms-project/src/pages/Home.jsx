@@ -5,7 +5,7 @@ export default function Home() {
 		<div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-blue-300">
 			<div className="relative z-10 max-w-screen-sm mx-auto p-10 bg-white rounded-3xl shadow-2xl border border-blue-200">
 				<h4
-					title="ceo of MVIII TECH (OPC) Pvt. Ltd."
+					title="ceo of NO (OPC) Pvt. Ltd."
 					className="text-sm font-semibold text-blue-700 mb-2 tracking-wide"
 				>
 					<sup className="text-xs text-blue-400">by</sup> Avinash (BYTS)
