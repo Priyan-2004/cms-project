@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
+import HomePage from './pages/Home'
 import Home from './pages/Home'
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
     <Home/>
     <SignUp/>
     <About/>
-   
 
     </>
   )
