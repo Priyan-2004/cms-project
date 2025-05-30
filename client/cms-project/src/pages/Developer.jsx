@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Developer(props) {
+function Developer() {
   return (
     <div>
       Develover page
