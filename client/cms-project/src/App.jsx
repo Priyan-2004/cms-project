@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './App.css'
 import SignUp from './pages/SignUp'
@@ -17,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
