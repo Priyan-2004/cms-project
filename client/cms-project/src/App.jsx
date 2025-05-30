@@ -1,14 +1,16 @@
-import React from 'react'
-import './App.css'
-import DashboardLayouts from './layouts/DashboardLayouts'
+import './App.css';
+import { AuthProvider } from './context/AuthContext';
+import { StorageProvider } from './context/StorageContext';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
-  return (
-    <>
-    <DashboardLayouts />
-    </> 
-  )
+	return (
+		<AuthProvider>
+			<StorageProvider>
+				<AppRoutes />
+			</StorageProvider>
+		</AuthProvider>
+	);
 }
 
-export default App
+export default App;
