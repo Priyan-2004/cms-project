@@ -2,8 +2,16 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import SignUp from '../pages/SignUp';
+
 import BasicLayouts from '../layouts/BasicLayouts';
 import DashboardLayouts from '../layouts/DashboardLayouts';
+=======
+import NotFound from '../pages/NotFound';
+import BasicLayouts from '../layouts/BasicLayouts';
+import DashboardLayouts from '../layouts/DashboardLayouts';
+
+
+
 export default function AppRoutes() {
 	return (
 		<Routes>
@@ -20,7 +28,18 @@ export default function AppRoutes() {
 						<DashboardLayouts />
 					</PrivateRoute>
 				}
+
 			></Route>
 		</Routes>
 	);
 };
+=======
+			>
+				<Route path="/dashboard/cms/my-content" element={<MyItems />} />
+			</Route>
+
+			<Route path="*" element={<NotFound />} />
+		</Routes>
+	);
+}
+
