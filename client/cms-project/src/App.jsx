@@ -1,20 +1,16 @@
-import React from 'react'
-import './App.css'
-import SignUp from './pages/SignUp'
-import About from './pages/About'
-import HomePage from './pages/Home'
-import Home from './pages/Home'
+import './App.css';
+import { AuthProvider } from './context/AuthContext';
+import { StorageProvider } from './context/StorageContext';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
-  return (
-    <>
-    <Home/>
-    <SignUp/>
-    <About/>
-
-    </>
-  )
+	return (
+		<AuthProvider>
+			<StorageProvider>
+				<AppRoutes />
+			</StorageProvider>
+		</AuthProvider>
+	);
 }
 
-export default App
+export default App;
